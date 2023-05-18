@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>The Trip</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style1.css">
+    <link rel="shortcut icon" href="./assets/img/bus.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300,100,500,700,600,900' rel='stylesheet' type='text/css'>
@@ -16,7 +17,7 @@
     <div id="main">
 
         <!-- Begin Banner section -->
-        <div id="banner">
+        <div class="banner">
 
             <!-- Begin Container section -->
             <div class="container">
@@ -30,13 +31,13 @@
                     </div>
                     <div class="nav">
                         <ul class="menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">brief</a></li>
-                            <li><a href="#">tours</a></li>
-                            <li><a href="#">pricing</a></li>
-                            <li><a href="#">gallery</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="#brief">brief</a></li>
+                            <li><a href="#tour">tours</a></li>
+                            <li><a href="#pricing">pricing</a></li>
+                            <li><a href="#gallery">gallery</a></li>
+                            <li><a href="./single.html">blog</a></li>
+                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </div>
                     <div class="clear"></div>
@@ -68,7 +69,7 @@
             <div class="container">
                 <h3>BRIEF</h3>
                 <!-- Begin Brief main content -->
-                    <div class="brief-main-content">
+                    <div class="brief-main-content fade-in-left">
                         
                         <img src="./assets/img/browse.jpg" alt="">
 
@@ -94,7 +95,7 @@
                         </div>
                     </div>
 
-                    <div class="brief-main-content">
+                    <div class="brief-main-content fade-in-right">
                         
                         <img src="./assets/img/browse2.jpg" alt="">
 
@@ -178,7 +179,7 @@
            
                 <div class="pricing-list">
     
-                    <div class="pricing-item">
+                    <div class="pricing-item fade-in-up">
                         <div class="item-heading">
                                 <h4 class="center">Basic</h4>
                                 <p class="center">From <span class="hilight">$10</span> per month</p>
@@ -195,7 +196,7 @@
                         </ul>
                     </div>
 
-                    <div class="pricing-item">
+                    <div class="pricing-item fade-in-down">
                         <div class="item-heading">
                                 <h4 class="center">Standard</h4>
                                 <p class="center">From <span class="hilight">$99</span> per month</p>
@@ -213,7 +214,7 @@
                         </ul>
                     </div>
 
-                    <div class="pricing-item">
+                    <div class="pricing-item fade-in-up">
                         <div class="item-heading">
                                 <h4 class="center">Golden</h4>
                                 <p class="center">From <span class="hilight">$150</span> per month</p>
@@ -248,7 +249,7 @@
                 <p class="p center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 
                 <!-- List item -->
-                <div class="list-item">
+                <div class="list-item slide">
                     <div class="gallery-item">
                         <img src="./assets/img/sc1.JPG" alt=""> 
                     </div>
@@ -259,6 +260,14 @@
     
                     <div class="gallery-item">
                         <img src="./assets/img/sc3.JPG" alt=""> 
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="./assets/img/sc2.JPG" alt=""> 
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="./assets/img/sc1.JPG" alt=""> 
                     </div>
                 <!-- End List item -->
 
@@ -316,7 +325,7 @@
 
                 <div class="blog-list-item">
 
-                    <div class="blog-item">
+                    <div class="blog-item fade-in-left">
                         <div class="box-grid">
                             <span></span>
                             <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.</p>
@@ -327,7 +336,7 @@
                         <p class="ceo">Abz Network</p>
                     </div>
 
-                    <div class="blog-item">
+                    <div class="blog-item fade-in-up">
                         <div class="box-grid">
                             <span></span>
                             <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.</p>
@@ -338,7 +347,7 @@
                         <p class="ceo">Abz Network</p>
                     </div>
 
-                    <div class="blog-item">
+                    <div class="blog-item fade-in-right">
                         <div class="box-grid">
                             <span></span>
                             <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.</p>
@@ -361,11 +370,11 @@
         <!-- Get started section -->
         <div class="get-started">
             <div class="container">
-
                 <h4>We Ready to Help You</h4>
-                <h3>Get the Best Solution for Your Business</h3>
-                <a class="get-started-btn" href="#">GET STARTED</a>
 
+                <h3>Get the Best Solution for Your Business</h3>
+
+                <a class="get-started-btn bounce-in" href="#">GET STARTED</a>
             </div>
         </div>
         <!-- End get started section -->
@@ -378,17 +387,17 @@
                 <p class="p center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div class="contact-form">
-                    <form action="#">
+                    <form action="">
 
-                        <div class="col-half">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Name">
+                        <div class="col-half fade-in-left">
+                            <input type="text" placeholder="Name" required>
+                            <input type="text" placeholder="Email" required>
+                            <input type="text" placeholder="Subject" required>
                         </div> 
 
-                        <div class="col-half">
-                            <textarea placeholder="Message"></textarea>
-                            <a href="#">SUBMIT</a>
+                        <div class="col-half fade-in-right">
+                            <textarea placeholder="Message" required></textarea>
+                            <input type="submit" value="SUBMIT">
                         </div> 
 
                         <div class="clear"></div>
@@ -402,20 +411,21 @@
         <!-- Begin Footer section -->
         <div id="footer">
             <div class="container">
-
-                <a href="#">
+                <a class="bounce-in" href="#">
                     <img src="./assets/img/logoTrip.png" alt="">
                 </a>
-                <p>Copyright © 2015 Trip . All Rights Reserved.</p>
-                <p>Design by W3layouts</p>
-                <p>Copy by Ng K Huy with <span>&hearts;</span></p>
 
+                <div class="copyr bounce-in-up">
+                    <p>Copyright © 2015 Trip . All Rights Reserved.</p>
+                    <p>Design by W3layouts</p>
+                    <p>Copy by Ng K Huy with <span>&hearts;</span></p>
+                </div>
             </div>
         </div>
         <!-- End Footer section -->
 
         <!-- to top -->
-        <a href="#to-top" id="toTop"></a>
+        <a href="#header" id="toTop"></a>
         <!-- End to top -->
 
     </div>
