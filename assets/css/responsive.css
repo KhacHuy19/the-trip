@@ -1,0 +1,328 @@
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    min-height: 507px;
+  }
+  .banner .banner-text h1 {
+    font-size: 3em;
+  }
+  .banner .banner-text h2 {
+    width: 66%;
+    font-size: 1.2em;
+  }
+  #header .logo {
+    margin-left: 15px;
+  }
+  .menu li a {
+    font-size: 1em;
+  }
+  .h3-heading {
+    font-size: 2.2em;
+  }
+  #brief .brief-content-heading h4 {
+    font-size: 2.2em;
+  }
+  #brief .brief-content-heading p, 
+  #brief .brief-content-description1 p, 
+  #brief .brief-content-description2 p {
+    font-size: 1.1em; 
+  }
+  #brief .brief-content-description1 h4, 
+  #brief .brief-content-description2 h4 {
+    font-size: 1.2em;
+  }
+  #blog .box-grid p {
+    font-size: 1em;
+  }
+  .get-started {
+    min-height: 265px;
+  }
+  .get-started h4 {
+    font-size: 1.2em;
+  }
+  .get-started h3 {
+    font-size: 2.4em;
+  }
+  .get-started .get-started-btn {
+    padding: 10px 21px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 370px;
+  }
+  .banner .banner-text h1 {
+    font-size: 2.5em;
+  }
+  .banner .banner-text h2 {
+    width: 75%;
+    font-size: 1.1em;
+  }
+  .menu li a {
+    padding: 0.5em 0.5em 0em 0.5em;
+  }
+  .h3-heading {
+    font-size: 2em;
+  }
+  .p {
+    font-size: 1em;
+  }
+  #brief .brief-content-heading h4 {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+  }
+  #brief .brief-content-heading p, 
+  #brief .brief-content-description1 p, 
+  #brief .brief-content-description2 p {
+    font-size: 1em;
+  }
+  #brief .brief-content-description1, 
+  #brief .brief-content-description2 {
+    padding: 0px 0px 22px 50px;
+  }
+  #brief .brief-content-description2 {
+    margin: 0;
+  }
+  #brief .brief-content-description1 h4, 
+  #brief .brief-content-description2 h4 {
+    font-size: 1.1em;
+    margin-bottom: 4px;
+  } 
+  .item-content li {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+  .pricing-item:nth-child(1),
+  .pricing-item:nth-child(2) {
+    margin-bottom: 1.5em;
+  }
+  #blog .box-grid p {
+    overflow: hidden;
+    height: 85px;
+  }
+  .get-started h4 {
+    font-size: 1em;
+  }
+  .get-started h3 {
+    font-size: 2.2em;
+  }
+  .get-started {
+    min-height: 203px;
+  }
+  .get-started .get-started-btn {
+    padding: 9px 21px;
+    font-size: 0.9em;
+  }
+  #contact .contact-form-group textarea,
+  #contact .contact-form-group input[type="text"] {
+    font-size: 0.9em;
+    padding: 0.7em;
+  }
+  #contact .contact-form-group input[type="submit"] {
+    font-size: 1em;
+    padding: 0.6em 2.5em;
+    margin-bottom: 2em;
+  } 
+  #contact .contact-form-group textarea {
+    height: 140px;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner {
+    min-height: 330px;
+  }
+  .banner .banner-text h1 {
+    font-size: 2.1em;
+  }
+  .banner .banner-text h2 {
+    width: 79%;
+    font-size: 1em;
+  }
+  #header{
+    padding: 1em 0 0em 0;
+  }
+  #header .nav {
+    display: none;
+  }
+  .h3-heading {
+    font-size: 1.8em;
+  }
+  .p {
+    font-size: 0.9em;
+  }
+  #brief {
+    padding: 5% 0 3% 0;
+  }
+  #brief .brief-content-heading h4 {
+    font-size: 1.375em;
+  }
+  #brief .brief-content-heading p, 
+  #brief .brief-content-description1 p, 
+  #brief .brief-content-description2 p {
+    font-size: 0.9em;
+    width: 98%;
+  }
+  #brief .brief-content-description1 h4, 
+  #brief .brief-content-description2 h4 {
+    font-size: 1em;
+  }
+  #gallery .slider {
+    min-width: 250%;
+    margin: 1em auto;
+  }
+  #gallery .slider-item {
+    width: 20%;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 223px;
+  }
+  .banner .banner-text h1 {
+    font-size: 1.6em;
+    margin-top: 10px;
+  }
+  .banner .banner-text h2 {
+    width: 100%;
+    line-height: 1.3em;
+    font-size: 0.875em;
+  }
+  #header{
+    padding: 1.3em 0 0 0;
+  }
+  .h3-heading {
+    font-size: 1.5em;
+  }
+  #brief .brief-main-content {
+    width: 100%;
+    padding: 0;
+  }
+  #brief h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+  #brief .brief-content-heading {
+    margin-top: 1.3em;
+  }
+  #brief .brief-content-heading h4 {
+    font-size: 1.5em;
+  }
+  .tour-item p {
+    height: 116px;
+    overflow: hidden;
+  }
+  #blog .blog-top-part {
+    width: 30%;
+    margin-bottom: 3em;
+  }
+  #blog .blog-top-part-item {
+    width: 100%;
+  }
+  #blog .blog-item {
+    width: 50%;
+  }
+  #blog .blog-item:nth-child(3) {
+    display: none;
+  }
+  .get-started {
+    min-height: 162px;
+  }
+  .get-started h3 {
+    font-size: 1.4em;
+  }
+  .get-started h4 {
+    font-size: 0.85em;
+  }
+  .get-started .get-started-btn {
+    padding: 7px 19px;
+    font-size: 0.85em;
+  }
+  #contact .form-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  #contact .contact-form-group input[type="submit"] {
+    margin: 0 auto 2em auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .h3-heading {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+  #header {
+    padding: 2.5em 0 0;
+  }
+  #header .logo img{
+    width: 50%;
+  }
+  #header .logo {
+    margin-left: 0;
+  }
+  .banner {
+    min-height: 210px;
+  }
+  .banner .banner-text h1 {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .banner .banner-text h2 {
+    margin-bottom: 2em;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    opacity: 0.9;
+  }
+  .banner-text {
+    margin-top: 10%;
+  }
+  #brief .brief-content-heading h4 {
+    font-size: 1.4em;
+  }
+  .tour-item {
+    width: 100%;
+  }
+  .tour-item p {
+    width: 100%;
+  }
+  .pricing-item {
+    width: 100%;
+    padding: 0;
+  }
+  #blog .blog-item {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .get-started h3 {
+    font-size: 1.2em;
+  }
+  .get-started .get-started-btn {
+    padding: 5px 14px;
+    font-size: 0.8em;
+  }
+}
