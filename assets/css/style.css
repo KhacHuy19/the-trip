@@ -596,7 +596,7 @@ p.ceo {
     width: 100%;
     display: flex;
 }
-#contact #contact-form {
+#contact .contact-form {
     width: 100%;
     display: flex;
     flex-direction: row;
