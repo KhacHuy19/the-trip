@@ -7,6 +7,7 @@
     }
     100% {
         opacity: 1;
+        visibility: visible;
         transform: translateY(0);
     }
 }
@@ -18,6 +19,7 @@
     }
     100% {
         opacity: 1;
+        visibility: visible;
         transform: translateY(0);
     }
 }
@@ -29,6 +31,7 @@
     }
     100% {
         opacity: 1;
+        visibility: visible;
         transform: translateX(0);
     }
 }
@@ -40,6 +43,7 @@
     }
     100% {
         opacity: 1;
+        visibility: visible;
         transform: translateX(0);
     }
 }
@@ -51,14 +55,17 @@
     }
     60% {
         opacity: 1;
+        visibility: visible;
         transform: scale(1.05);
     }
     80% {
         opacity: 1;
+        visibility: visible;
         transform: scale(0.8);
     }
     100% {
         opacity: 1;
+        visibility: visible;
         transform: scale(1);
     }
 }
@@ -70,12 +77,15 @@
     }
     60% {
         opacity: 1;
+        visibility: visible;
         transform: translateX(30px);
     }
     80% {
+        visibility: visible;
         transform: translateX(-10px);
     }
     100% {
+        visibility: visible;
         transform: translateX(0);
     } 
 }
@@ -87,12 +97,15 @@
     }
     60% {
         opacity: 1;
+        visibility: visible;
         transform: translateX(-30px);
     }
     80% {
+        visibility: visible;
         transform: translateX(10px);
     }
     100% {
+        visibility: visible;
         transform: translateX(0);
     } 
 }
@@ -104,12 +117,15 @@
     }
     60% {
         opacity: 1;
+        visibility: visible;
         transform: translateY(-30px);
     }
     80% {
+        visibility: visible;
         transform: translateY(10px);
     }
     100% {
+        visibility: visible;
         transform: translateY(0);
     } 
 }

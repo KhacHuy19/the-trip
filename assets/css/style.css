@@ -182,6 +182,7 @@ ul {
 }
 
 #brief .brief-main-content{
+    visibility: hidden;
     width: 50%;
     padding: 0 15px;
 }
@@ -314,6 +315,7 @@ ul {
 }
 
 .pricing-item {
+    visibility: hidden;
     width: 33.33333333%;
     transition: 0.5s all;
     padding: 0 15px;
@@ -483,6 +485,7 @@ ul {
 }
 
 #blog .blog-item {
+    visibility: hidden;
     width: 33.3333%;
     padding: 0 15px;
 }
@@ -549,6 +552,7 @@ p.ceo {
 }
 
 .get-started h4 {
+    visibility: hidden;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 1em;
@@ -556,6 +560,7 @@ p.ceo {
 }
 
 .get-started h3 {
+    visibility: hidden;
     font-size: 2.8em;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 1em;
@@ -563,6 +568,7 @@ p.ceo {
 }
 
 .get-started .get-started-btn {
+    visibility: hidden;
     color: #fff;
     padding: 12px 18px;
     border: 1px solid #0199e6;
