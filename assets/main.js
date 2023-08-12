@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   const briefMains = document.querySelectorAll(".brief-main-content");
   const pricingItems = document.querySelectorAll(".pricing-item");
   const blogItems = document.querySelectorAll(".blog-item");
@@ -101,4 +101,49 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(document.documentElement.clientHeight);
     toTop.hidden = this.scrollY < document.documentElement.clientHeight;
   });
+
+  ///
+  var flkty = new Flickity(".main-carousel", {
+    // options
+    cellAlign: "left",
+    groupCells: 3,
+    prevNextButtons: false,
+    pageDots: true,
+    autoPlay: 2500,
+    pauseAutoPlayOnHover: false,
+    setGallerySize: false,
+  });
+
+  var flkty2 = new Flickity(".blog-top-part", {
+    // options
+    cellAlign: "left",
+    draggable: false,
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: false,
+    autoPlay: 2000,
+    pauseAutoPlayOnHover: false,
+    setGallerySize: false,
+  });
 });
+
+function toggleMobileMenu(element) {
+  // element.classList.toggle("open");
+
+  if (
+    !element.classList.contains("open") &&
+    !element.lastElementChild.classList.contains("slide-down")
+  ) {
+    element.classList.add("open");
+
+    if (element.lastElementChild.classList.contains("slide-up")) {
+      element.lastElementChild.classList.remove("slide-up");
+    }
+    element.lastElementChild.classList.add("slide-down");
+  } else {
+    element.classList.remove("open");
+    element.lastElementChild.classList.replace("slide-down", "slide-up");
+  }
+
+  // console.log({ element });
+}

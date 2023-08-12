@@ -48,9 +48,13 @@ ul {
 .bounce-in-left{
     animation: bounceInLeft 1s 0.5s both;
 }
-.slide{
-    animation: slide 8s ease-out 2s infinite none;
+.slide-down {
+    animation: slideDown .8s ease;
 }
+.slide-up {
+    animation: slideUp .8s ease both;
+}
+
 .h3-heading {
     color: #393939;
     font-size: 2.5em;
@@ -84,6 +88,11 @@ ul {
     background: url('../img/banner.jpg') no-repeat 0px 0px;
     background-size: cover;
 }
+
+.banner2 {
+    min-height: 100px;
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -95,6 +104,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 #header .logo {
     animation: fadeInLeft 0.6s linear 0.5s both;
@@ -119,6 +129,34 @@ ul {
 .menu li:hover a {
     color:#0199e6;
     -webkit-transition: 0.5s all;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger-icon div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .banner .banner-text {
@@ -390,11 +428,10 @@ ul {
 }
 
 #gallery {
-    padding: 3% 0;
+    padding: 3% 0 7% 0;
 }
 
 #gallery .container {
-    overflow: hidden;
     width: 84%;
     padding: 0 0;
 }
@@ -408,47 +445,19 @@ ul {
     border-bottom: 1px solid #1f568b;
 }
 
-#gallery .slider {
-    display: flex;
-    flex-flow: row nowrap;
+.main-carousel {
     margin: 3em auto;
-    min-width: 200%;
+    height: 284px;
 }
 
-#gallery .slider-item {
-    width: 16.65%;
-    padding: 2px;
+.carousel-cell {
+    width: 33.3333%;
+    height: 100%;
+    padding: 0 2px;
 }
 
-#gallery .slider-item img {
+.carousel-cell img {
     width: 100%;
-}
-
-#gallery .owl-pagination {
-    margin-bottom: 3em;
-}
-
-#gallery .owl-page {
-    display: inline-block;
-    cursor: pointer;
-}
-
-#gallery .owl-page span {
-    display: block;
-    width: 13px;
-    height: 13px;
-    margin: 5px 7px;
-    opacity: 0.5;
-    border-radius: 50%;
-    border: 1px solid #94cae6;
-    background: #94cae6;    
-}
-
-#gallery .owl-page.active span, 
-#gallery .owl-page:hover span {
-    opacity: 1;
-    border: 1px solid #0199e6;
-    background: #0199e6;
 }
 
 #blog {
@@ -464,17 +473,15 @@ ul {
     border-bottom: 1px solid #1f568b;
 }
 
-#blog .blog-top-part {
-    overflow: hidden;
-    display: flex;
-    flex-flow: row nowrap;
+.blog-top-part {
     width: 60%;
+    height: 40px;
     margin: 4em auto 0 auto;
 }
 
-#blog .blog-top-part-item {
+.blog-top-part-item {
+    height: 100%;
     width: 25%;
-    max-height: 40px;
 }
 
 #blog .blog-list-item {
@@ -913,6 +920,7 @@ p.ceo {
 }
 .content__add-comment-input{
     flex: 1;
+    width: 33.3333%;
     color: #999;
     font-size: 15px;
     padding: 15px 10px;
