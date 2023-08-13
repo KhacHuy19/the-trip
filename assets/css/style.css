@@ -428,7 +428,8 @@ ul {
 }
 
 #gallery {
-    padding: 3% 0 7% 0;
+    padding: 3% 0 3% 0;
+    position: relative;
 }
 
 #gallery .container {
@@ -445,9 +446,9 @@ ul {
     border-bottom: 1px solid #1f568b;
 }
 
-.main-carousel {
-    margin: 3em auto;
-    height: 284px;
+#gallery .main-carousel {
+    height: 211px;
+    min-height: 284px;
 }
 
 .carousel-cell {
@@ -456,12 +457,34 @@ ul {
     padding: 0 2px;
 }
 
+.main-carousel .flickity-page-dots {
+    bottom: -30px;
+}
+.main-carousel .flickity-page-dots .dot {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #94cae6;
+  background: #94cae6;
+  opacity: 0.7;
+}
+
+.main-carousel .flickity-page-dots .dot:hover {
+  border: 1px solid #0199e6;
+  background: #0199e6;
+  opacity: 1;
+}
+
+.main-carousel .flickity-page-dots .dot.is-selected {
+  background: #0199e6;
+  border: 1px solid #0199e6;
+}
+
 .carousel-cell img {
     width: 100%;
 }
 
 #blog {
-    padding: 3% 0;
+    padding: 10% 0 3% 0;
 }
 
 #blog h3::after {

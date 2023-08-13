@@ -387,27 +387,12 @@
         </div>
       </div>
     </div>
-    <script>
-      function toggleMobileMenu(element) {
-        // element.classList.toggle("open");
 
-        if (
-          !element.classList.contains("open") &&
-          !element.lastElementChild.classList.contains("slide-down")
-        ) {
-          element.classList.add("open");
+    <!-- to top -->
+    <div id="toTop" hidden></div>
+    <!-- End to top -->
 
-          if (element.lastElementChild.classList.contains("slide-up")) {
-            element.lastElementChild.classList.remove("slide-up");
-          }
-          element.lastElementChild.classList.add("slide-down");
-        } else {
-          element.classList.remove("open");
-          element.lastElementChild.classList.replace("slide-down", "slide-up");
-        }
+    <script src="./assets/main.js"></script>
 
-        // console.log({ element });
-      }
-    </script>
   </body>
 </html>

@@ -81,6 +81,11 @@
     font-size: 1.2em;
   }
 
+  #gallery .main-carousel {
+    height: 180px;
+    min-height: 180px;
+  }
+
   #blog .blog-top-part {
     width: 60%;
     height: 40px;
@@ -183,6 +188,15 @@
     margin-bottom: 1.5em;
   }
 
+  #gallery .main-carousel {
+    height: 156px;
+    min-height: 129px;
+  }
+
+  #blog {
+    padding: 12% 0 3% 0;
+  }
+
   #blog .box-grid p {
     overflow: hidden;
     height: 85px;
@@ -203,6 +217,10 @@
   .get-started .get-started-btn {
     padding: 9px 21px;
     font-size: 0.9em;
+  }
+
+  #contact .contact-form-group {
+    margin-top: 3em;
   }
 
   #contact .contact-form-group textarea,
@@ -357,6 +375,12 @@
   }
 }
 
+@media (max-width: 430px) {
+  .main-carousel .flickity-page-dots {
+    bottom: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .banner {
     min-height: 223px;
@@ -416,6 +440,14 @@
     font-size: 12px;
   }
 
+  #gallery .main-carousel {
+    height: 144px;
+  }
+
+  #blog {
+    padding: 16% 0 3% 0;
+  }
+
   #blog .blog-top-part {
     width: 30%;
     margin-bottom: 3em;
@@ -452,6 +484,10 @@
   .get-started .get-started-btn {
     padding: 7px 19px;
     font-size: 0.85em;
+  }
+
+  #contact .contact-form-group {
+    margin-top: 2em;
   }
 
   #contact .form-list-item {
@@ -529,6 +565,19 @@
   .pricing-item {
     width: 100%;
     padding: 0;
+  }
+
+  #gallery .main-carousel {
+    height: 94px;
+    min-height: 94px;
+  }
+
+  .main-carousel .flickity-page-dots {
+    bottom: -15px;
+  }
+
+  #blog {
+    margin: 20% 0 3% 0;
   }
 
   #blog .blog-item {

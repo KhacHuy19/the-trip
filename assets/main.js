@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const briefMains = document.querySelectorAll(".brief-main-content");
   const pricingItems = document.querySelectorAll(".pricing-item");
@@ -102,11 +103,17 @@ document.addEventListener("DOMContentLoaded", function () {
     toTop.hidden = this.scrollY < document.documentElement.clientHeight;
   });
 
-  ///
+  ////// Flickity Libraly used
+  let groupCellVal = 3;
+  
+  if(window.innerWidth < 640){
+    groupCellVal = 2;
+  }
+  
   var flkty = new Flickity(".main-carousel", {
     // options
     cellAlign: "left",
-    groupCells: 3,
+    groupCells: groupCellVal,
     prevNextButtons: false,
     pageDots: true,
     autoPlay: 2500,
@@ -127,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+////// Navbar handle
 function toggleMobileMenu(element) {
   // element.classList.toggle("open");
 
@@ -147,3 +155,4 @@ function toggleMobileMenu(element) {
 
   // console.log({ element });
 }
+
